@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>rev-slider-init.js</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #808080;}
+.s2 { color: #cc7832;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+rev-slider-init.js</font>
+</center></td></tr></table>
+<pre>
+    <span class="s1">/*------------------------------------------------------------------------------- 
+      Slider  
+    -------------------------------------------------------------------------------*/</span>
+
+
+	
+	<span class="s2">if </span><span class="s0">(</span><span class="s2">typeof </span><span class="s0">$.fn.revolution !== </span><span class="s3">'undefined'</span><span class="s0">) {</span>
+      
+      <span class="s0">$(</span><span class="s3">&quot;#rev_slider&quot;</span><span class="s0">).revolution({</span>
+        <span class="s0">sliderType:</span><span class="s3">&quot;standard&quot;</span><span class="s2">,</span>
+        <span class="s0">sliderLayout:</span><span class="s3">&quot;fullscreen&quot;</span><span class="s2">,</span>
+        <span class="s0">dottedOverlay:</span><span class="s3">&quot;none&quot;</span><span class="s2">,</span>
+        <span class="s0">delay:</span><span class="s4">7000</span><span class="s2">,</span>
+        <span class="s0">navigation: {</span>
+          <span class="s0">keyboardNavigation:</span><span class="s3">&quot;off&quot;</span><span class="s2">,</span>
+          <span class="s0">keyboard_direction: </span><span class="s3">&quot;horizontal&quot;</span><span class="s2">,</span>
+          <span class="s0">onHoverStop:</span><span class="s3">&quot;off&quot;</span><span class="s2">,</span>
+          <span class="s0">touch:{</span>
+            <span class="s0">touchenabled:</span><span class="s3">&quot;on&quot;</span><span class="s2">,</span>
+            <span class="s0">swipe_threshold: </span><span class="s4">75</span><span class="s2">,</span>
+            <span class="s0">swipe_min_touches: </span><span class="s4">1</span><span class="s2">,</span>
+            <span class="s0">swipe_direction: </span><span class="s3">&quot;horizontal&quot;</span><span class="s2">,</span>
+            <span class="s0">drag_block_vertical: </span><span class="s2">false</span>
+          <span class="s0">}</span>
+        <span class="s0">}</span><span class="s2">,</span>
+        <span class="s0">parallax: {</span>
+	        <span class="s0">type: </span><span class="s3">'mouse+scroll'</span><span class="s2">,</span>
+	        <span class="s0">origo: </span><span class="s3">'slidercenter'</span><span class="s2">,</span>
+	        <span class="s0">speed: </span><span class="s4">400</span><span class="s2">,</span>
+	        <span class="s0">levels: [</span><span class="s4">5</span><span class="s2">,</span><span class="s4">10</span><span class="s2">,</span><span class="s4">15</span><span class="s2">,</span><span class="s4">20</span><span class="s2">,</span><span class="s4">25</span><span class="s2">,</span><span class="s4">30</span><span class="s2">,</span><span class="s4">35</span><span class="s2">,</span><span class="s4">40</span><span class="s2">,</span>
+	                 <span class="s4">45</span><span class="s2">,</span><span class="s4">46</span><span class="s2">,</span><span class="s4">47</span><span class="s2">,</span><span class="s4">48</span><span class="s2">,</span><span class="s4">49</span><span class="s2">,</span><span class="s4">50</span><span class="s2">,</span><span class="s4">51</span><span class="s2">,</span><span class="s4">55</span><span class="s0">]</span><span class="s2">,</span>
+	        <span class="s0">disable_onmobile: </span><span class="s3">'on'</span>
+	    <span class="s0">}</span><span class="s2">,</span>
+		<span class="s0">responsiveLevels:[</span><span class="s4">2048</span><span class="s2">,</span><span class="s4">1200</span><span class="s2">,</span><span class="s4">992</span><span class="s0">]</span><span class="s2">,</span>
+        <span class="s0">gridwidth:[</span><span class="s4">1180</span><span class="s2">,</span><span class="s4">992</span><span class="s2">,</span><span class="s4">768</span><span class="s0">]</span><span class="s2">,</span>
+		<span class="s0">gridheight: [</span><span class="s4">868</span><span class="s0">]</span><span class="s2">,</span>
+        <span class="s0">lazyType:</span><span class="s3">&quot;none&quot;</span><span class="s2">,</span>
+        <span class="s0">shadow:</span><span class="s4">0</span><span class="s2">,</span>
+        <span class="s0">spinner:</span><span class="s3">&quot;off&quot;</span><span class="s2">,</span>
+        <span class="s0">stopLoop:</span><span class="s3">&quot;on&quot;</span><span class="s2">,</span>
+        <span class="s0">stopAfterLoops:</span><span class="s4">0</span><span class="s2">,</span>
+        <span class="s0">shuffle:</span><span class="s3">&quot;off&quot;</span><span class="s2">,</span>
+        <span class="s0">autoHeight:</span><span class="s3">&quot;on&quot;</span><span class="s2">,</span>
+        <span class="s0">fullScreenAlignForce:</span><span class="s3">&quot;off&quot;</span><span class="s2">,</span>
+        <span class="s0">fullScreenOffsetContainer: </span><span class="s3">&quot;&quot;</span><span class="s2">,</span>
+        <span class="s0">fullScreenOffset: </span><span class="s3">&quot;&quot;</span><span class="s2">,</span>
+        <span class="s0">disableProgressBar:</span><span class="s3">&quot;on&quot;</span><span class="s2">,</span>
+        <span class="s0">hideThumbsOnMobile:</span><span class="s3">&quot;off&quot;</span><span class="s2">,</span>
+        <span class="s0">hideSliderAtLimit:</span><span class="s4">0</span><span class="s2">,</span>
+        <span class="s0">hideCaptionAtLimit:</span><span class="s4">0</span><span class="s2">,</span>
+        <span class="s0">hideAllCaptionAtLilmit:</span><span class="s4">0</span><span class="s2">,</span>
+        <span class="s0">debugMode:</span><span class="s2">false,</span>
+        <span class="s0">fallbacks: {</span>
+          <span class="s0">simplifyAll:</span><span class="s3">&quot;off&quot;</span><span class="s2">,</span>
+          <span class="s0">nextSlideOnWindowFocus:</span><span class="s3">&quot;off&quot;</span><span class="s2">,</span>
+          <span class="s0">disableFocusListener:</span><span class="s2">false,</span>
+        <span class="s0">}</span>
+      <span class="s0">})</span><span class="s2">;</span>
+    <span class="s0">}</span>
+
+    
+
+  	<span class="s0">$(</span><span class="s3">'.arrow-left'</span><span class="s0">).on(</span><span class="s3">'click'</span><span class="s2">, function</span><span class="s0">(){</span>
+   	    <span class="s0">$(</span><span class="s3">&quot;#rev_slider&quot;</span><span class="s0">).revprev()</span><span class="s2">;</span>
+  	<span class="s0">})</span><span class="s2">;</span>
+  
+	<span class="s0">$(</span><span class="s3">'.arrow-right'</span><span class="s0">).on(</span><span class="s3">'click'</span><span class="s2">, function</span><span class="s0">(){</span>
+	    <span class="s0">$(</span><span class="s3">&quot;#rev_slider&quot;</span><span class="s0">).revnext()</span><span class="s2">;</span>
+	<span class="s0">})</span><span class="s2">;</span>
+
+	<span class="s0">$(</span><span class="s3">'.slide-number .total-count'</span><span class="s0">).text($(</span><span class="s3">'#rev_slider li'</span><span class="s0">).size())</span><span class="s2">;</span>
+
+    <span class="s0">$(</span><span class="s3">'#rev_slider'</span><span class="s0">).bind(</span><span class="s3">&quot;revolution.slide.onchange&quot;</span><span class="s2">,function </span><span class="s0">(e</span><span class="s2">,</span><span class="s0">data) {</span>
+	    <span class="s0">$(</span><span class="s3">'.slide-number .count'</span><span class="s0">).text(data.slideIndex)</span><span class="s2">;</span>
+    <span class="s0">})</span><span class="s2">;</span>
+
+
+</pre>
+</body>
+</html>
