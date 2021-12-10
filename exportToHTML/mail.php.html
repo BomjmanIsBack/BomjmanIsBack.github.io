@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>mail.php</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #a9b7c6;}
+.s3 { color: #cc7832;}
+.s4 { color: #6a8759;}
+.s5 { color: #808080;}
+.s6 { color: #cc7832; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+mail.php</font>
+</center></td></tr></table>
+<pre><span class="s0">&lt;?php</span>
+<span class="s2">$name </span><span class="s3">= </span><span class="s2">$_POST</span><span class="s1">[</span><span class="s4">&quot;name&quot;</span><span class="s1">];</span>
+<span class="s2">$email </span><span class="s3">= </span><span class="s2">$_POST</span><span class="s1">[</span><span class="s4">&quot;email&quot;</span><span class="s1">];</span>
+<span class="s2">$message </span><span class="s3">= </span><span class="s2">$_POST</span><span class="s1">[</span><span class="s4">&quot;message&quot;</span><span class="s1">];</span>
+
+
+<span class="s2">$EmailTo </span><span class="s3">= </span><span class="s4">&quot;000.lunchbox@gmail.com&quot;</span><span class="s1">;</span>
+<span class="s2">$Subject </span><span class="s3">= </span><span class="s4">&quot;New Message Received&quot;</span><span class="s1">;</span>
+
+<span class="s5">// prepare email body text</span>
+<span class="s2">$Fields </span><span class="s3">.= </span><span class="s4">&quot;Name: &quot;</span><span class="s1">;</span>
+<span class="s2">$Fields </span><span class="s3">.= </span><span class="s2">$name</span><span class="s1">;</span>
+<span class="s2">$Fields </span><span class="s3">.= </span><span class="s4">&quot;</span><span class="s6">\n</span><span class="s4">&quot;</span><span class="s1">;</span>
+
+<span class="s2">$Fields</span><span class="s3">.= </span><span class="s4">&quot;Email: &quot;</span><span class="s1">;</span>
+<span class="s2">$Fields </span><span class="s3">.= </span><span class="s2">$email</span><span class="s1">;</span>
+<span class="s2">$Fields </span><span class="s3">.= </span><span class="s4">&quot;</span><span class="s6">\n</span><span class="s4">&quot;</span><span class="s1">;</span>
+
+<span class="s2">$Fields </span><span class="s3">.= </span><span class="s4">&quot;Message: &quot;</span><span class="s1">;</span>
+<span class="s2">$Fields </span><span class="s3">.= </span><span class="s2">$message</span><span class="s1">;</span>
+<span class="s2">$Fields </span><span class="s3">.= </span><span class="s4">&quot;</span><span class="s6">\n</span><span class="s4">&quot;</span><span class="s1">;</span>
+
+
+<span class="s5">// send email</span>
+<span class="s2">$success </span><span class="s3">= </span><span class="s1">mail(</span><span class="s2">$EmailTo</span><span class="s1">,  </span><span class="s2">$Subject</span><span class="s1">,  </span><span class="s2">$Fields</span><span class="s1">, </span><span class="s4">&quot;From:&quot;</span><span class="s3">.</span><span class="s2">$email</span><span class="s1">);</span>
+
+</pre>
+</body>
+</html>
