@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://uchebnik.mos.ru/app_player/435995 -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      
+      <title>Виртуальная лабораторная работа по физике "Изучение колебаний математического маятника"</title>
+      
+    </head>
+    <body style="margin: 0;">
+          <iframe src="./Виртуальная лабораторная работа по физике _Изучение колебаний математического маятника__files/index.html" style="display: block; border: none; height: 100vh; width: 100vw"></iframe>
+    <script type="text/javascript">
+      (function() {
+        var session_start = 1638720776;
+
+        function ping() {
+          if (!document.hidden) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/api/app_tokens/99a540f1225f54c8c436f7918ad1a61c3cea35b73bfbf1563252757bdd077737/ping', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onreadystatechange = function() {
+              if (xhr.readyState == XMLHttpRequest.DONE) {
+                setTimeout(ping, 120000);
+              }
+            }
+            xhr.send(JSON.stringify({session_start: session_start, referer: 'https://uchebnik.mos.ru/material/app/275922'}))
+          } else {
+            session_start = Math.floor(Date.now() / 1000);
+            setTimeout(ping, 120000);
+          }
+        }
+        ping();
+      })();
+    </script>
+    
+
+    
+    
+</body></html>
+
