@@ -1,0 +1,48 @@
+#canvas {
+  position: absolute;
+  top:80px;
+  left: 490px;
+}
+
+#stand {
+  position: absolute;
+  top: 80px;
+  left: 540px;
+}
+
+#level {
+  position: absolute;
+  top: 450px;
+  left: 594px;
+}
+
+#level2 {
+  position: absolute;
+  top: 428px;
+  left: 691px;
+  width: 33px;
+  height: 73px;
+  z-index: 4;
+}
+
+#ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  z-index: 3;
+}
+
+#planet {
+  position: absolute;
+  top: 260px;
+  left: 200px;
+}
+
+#ten {
+  position: absolute;
+  top: 500px;
+  left: 410px;
+  width: 350px;
+  height: 100px;
+  z-index: 0;
+}
